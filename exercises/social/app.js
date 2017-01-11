@@ -2,7 +2,7 @@ var snowboarder = {
     name: "mike",
     age: 38,
     agePerYear: function(){
-        age++;
+        this.age++;
         return this.age;
     },
     favoriteMountains:[
@@ -49,7 +49,8 @@ snowboarder.favoriteMountains[1].price = "expensive";
 var vail = {mountainName: "Vail", 
             county: "Summit", 
             state: "Colorado"};
+
 snowboarder.favoriteMountains.push({vail});
 console.log(snowboarder.favoriteMountains[2].attributes.avgSnowfall);
 console.log(snowboarder.favoriteMountains[2].attributes.colorSnow);
-console.log(snowboarder);
+console.log(snowboarder.agePerYear());
