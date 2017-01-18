@@ -1,0 +1,51 @@
+body{
+    background-color:cornflowerblue;
+}
+header{
+    text-align: center;
+    font-size: 100px;
+    font-family: fantasy
+}
+
+
+navbar li{
+    display:inline;
+    font-size: 40px;
+    margin:0px 0px 0px 20px;
+}
+navbar a{
+    text-decoration: none;
+    color:white;
+}
+navbar a:hover{
+    color:deeppink;
+    text-decoration: underline;
+}
+main img{
+    width:300px;
+    height:200px;
+    display:inline-block;
+    margin:0px 0px 30px 60px;
+    border-radius: 50%;
+}
+p{
+    font-size:35px;
+    text-align: center;
+    font-family: fantasy;
+    color:white;
+}
+footer h3{
+    display:inline;
+    font-size:30px;
+    margin-left:30px;
+    color:chartreuse
+}
+footer .social{
+    float:right;
+    margin:-10px 15px 0px 0px;
+    font-size:50px;
+    color:white;
+}
+footer i:hover{
+    color:black;
+}

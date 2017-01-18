@@ -1,0 +1,28 @@
+/*
+Media query with a smallish min-width breakpoint
+e.g. @media (min-width: 400px)
+
+Media query with a slightly larger min-width breakpoint
+e.g. @media (min-width: 600px)
+
+Media query with a larger still min-width breakpoint
+e.g. @media (min-width: 960px)
+*/
+
+
+@media only screen and (min-width: 800px){
+    .blue{
+        width:30%
+    }
+    .red{
+        width:40%
+    }
+}
+.blue{
+    background-color:blue;
+    height:200px;
+}
+.red{
+    background-color:red;
+    height:200px;
+}

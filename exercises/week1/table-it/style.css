@@ -1,0 +1,40 @@
+body{
+    background-color: blu;
+}
+h1{
+   color:red;
+    text-align: center;
+}
+table th{
+    font-size: 60px;
+}
+table tr{
+    border: 2px solid black;
+}
+table tr td{
+   
+    font-size: 20px;
+    background-color:aquamarine
+}
+.truck-name{
+    text-decoration: underline;
+    font-size:30px;
+}
+table, th td{
+    text-align: center;
+    border-collapse: collapse;
+}
+table td{
+    padding:20px;
+}
+.label{
+    color:;
+    text-decoration: underline;
+}
+tr img{
+    height:80px;
+    width:150px;
+}
+.slogan{
+    font-size:30px;
+}

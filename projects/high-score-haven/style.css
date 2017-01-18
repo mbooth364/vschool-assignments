@@ -1,0 +1,25 @@
+body{
+    background-color: ;
+}
+table{
+    margin:auto;
+}
+th{
+    font-size:60px;
+}
+table tr{
+    border:2px solid black;
+}
+table tr td{
+   
+    font-size:30px;
+    padding:10px;
+    text-align: center;
+    padding:50px;
+}
+.table-head td{
+    text-decoration: underline;
+    font-size: 60px;
+    
+    
+}

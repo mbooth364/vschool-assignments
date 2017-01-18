@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Mario Pest Control</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#"><img class="img-responsive" style="margin-top:8px" src="https://share.nintendo.com/nclood/stable/en-us/modules/nav/images/logo-nintendo.svg"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="navbar-tabs"><a style="color:black" href="#">Home</a></li>
+                    <li class="navbar-tabs"><a style="color:black" href="#">Page 1</a></li>
+                    <li class="navbar-tabs"><a style="color:black" href="#">Page 2</a></li>
+                    <li class="navbar-tabs"><a style="color:black" href="#">Page 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a style="color:black" href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a style="color:black" href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <header class="container-fluid">
+            <h1>Mario Pest Control</h1>
+        </header>
+
+        <section class="row">
+            <div class="col-sm-4">
+                <ul>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr_znAEEOLsJbW3CSGxzyUj-MxNhNiaYZEfV1lM2JMxXD6LQo2"></li>
+                    <li>
+                        <h3 class="enemy-name">Goombas</h3></li>
+                    <li>
+                        <h3>Goombas Price: 7 Coins</h3></li>
+                <li>
+                        <h4>New Caught:
+                            <input id="new-goombas-caught" type="text" name="new Caught" size="3"></h4>
+                            <h4>Total Caught: <span  id="total-goombas-caught"></span></h4>
+                            <h4>Cost:  <span id="goombas-cost"></span></h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                    <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbMCvaeMZ-KIp4vyBD34P3v5AEeLv_L0Rb9qLj9znq8jvWQDwM"></li>
+                    <li>
+                        <h3 class="enemy-name">Bob-ombs</h3></li>
+                    <li>
+                        <h3>Bob-ombs Price: 7 Coins</h3></li>
+                    <li>
+                        <h4>New Caught:
+                            <input id="new-bobs-caught" type="text" name="new Caught" size="3"></h4>
+                        <h4>Total Caught: <span id="total-bobs-caught"></span></h4>
+                        <h4>Cost: <span  id="bobs-cost"></span></h4>
+                    </li>    
+                </ul>
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                    <li><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQnHtUKgaz7gYbWdhNCCJ8kwVSLJlX1dPgJwBz-JuTxl0H5wIgnKA"></li>
+                    <li>
+                        <h3 class="enemy-name">Cheep-cheeps</h3></li>
+                    <li>
+                        <h3>Cheep-cheep Price: 11 Coins</h3>
+                    </li>
+                    <li>
+                        <h4>New Caught:
+                            <input id="new-cheeps-caught" type="text" name="new Caught" size="3"></h4>
+                        <h4>Total Caught:  <span  id="total-cheeps-caught"></span></h4>
+                        <h4>Cost: <span  id="cheeps-cost"></span></h4>
+                    </li>
+                </ul>
+            </div>
+            <button id="submit-new-caught" type="submit">Submit</button>
+        </section>
+        <article class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3>Total Coins Collected:<span id="total-coins"></span></h3>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="container-fluid lorem">
+        <h1>Lorem Ipsum</h1>
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <span id="lorem">Excepteur sint occaecat</span> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWWZ1XS5tXRu9u1TISW49BB14lRoxVEYurTSsiHq_ELshh-QkwGA" alt="Chania">
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTWWZ1XS5tXRu9u1TISW49BB14lRoxVEYurTSsiHq_ELshh-QkwGA" alt="Chania">
+
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvAVhXJ-fab6ESqYIArANobhCqqpeWcCZfuB36k42EIPdNHRTBBQ" alt="Flower">
+
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx__ep7lwTK3w31JKvahxNmHKt5lXHX15JbDEF9SwWGupprxLaRA" alt="Flower">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+    <footer class="container-fluid">
+        <a href="#"><i style="font-size:50px" class="fa fa-facebook-square footer-social"></i></a>
+        <a href="#"><i style="font-size:50px"class="fa fa-instagram footer-social"></i></a>
+        <a href="#"><i style="font-size:50px"class="fa fa-twitter footer-social"></i></a>
+        <h3>Mario@gmail.com</h3>
+        <h3>Crazymario.com</h3>
+        <h3>123 Mario World St. Nintendo 89125</h3>
+    </footer>
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>

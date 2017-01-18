@@ -1,0 +1,130 @@
+body{
+    background-color: white;
+}
+.jumbotron{
+    background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS3iTbJ46zkz8khrACMqgnBJz-IWM4XAtHIuaw1MVvaLC9zrPBP");
+    background-repeat:no-repeat;
+    background-size:cover;
+    margin-top:-20px;
+    color:yellow;
+}
+.jumbotron h1{
+    font-size:100px;
+}
+.navbar{
+    background-color:red;
+    color:red;
+}
+.navbar-tabs{
+    font-size:20px;
+    font-weight:800;
+    font-family: fantasy;
+}
+header h1{
+    font-size: 250px;
+    text-align: center;
+    font-family: fantasy;  
+    margin:20px;
+    color:yellow;
+}
+section img{
+    max-height: 200px;
+    min-width:200px;
+}
+.enemy-name{
+    text-decoration: underline;
+    font-size:35px
+}
+section ul li{
+    display:inline; 
+    font-family: 'Cherry Swash', cursive; 
+    color:yellow;
+}
+article h3{
+    margin:50px 0px 0px 0px;
+    font-family: 'Cherry Swash', cursive; 
+    font-size:30px;
+    color:yellow;
+}
+
+footer{
+    background-color:rgba(1,1,1,0.2);
+    margin:0px 0px 0px 0px;
+}
+footer h3{
+    float:right;
+    display:inline;
+    padding:20px;
+    font-family:fantasy;
+    font-weight:600;
+}
+.footer-social{ 
+    margin-top:20px;
+    padding-left:20px
+}
+form h4{
+    display:inline;
+}
+
+#totalCaught{
+    padding-left: 20px;
+}
+#totalCoins{
+    padding-left: 20px;
+}
+.lorem h1{
+    font-size:60px;
+    font-weight:900
+}
+.lorem{
+    margin:-30px 0px 0px 0px;
+    background-color:red;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 30px;
+    color:white;
+    animation-name:color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.item img{
+    width:350px;
+    min-height: 300px;
+    max-height: 300px;
+    margin:auto;
+    
+}
+.carousel{
+    margin-top:0px;
+    background-color:white;
+}
+.carousel-indicators {
+    margin-bottom:-47px;
+}
+@keyframes color {
+    0%   {background-color: red;}
+    25%  {background-color: yellow;}
+    50%  {background-color: blue;}
+    100% {background-color: green;}
+}
+#lorem{
+    font-size: 40px;
+    text-decoration: underline;
+    color:black;
+}
+#new-cheeps-caught{
+    color:black;
+    text-align: center;
+}#new-bobs-caught{
+    color:black;
+    text-align: center;
+}#new-goombas-caught{
+    color:black;
+    text-align: center;
+}
+#submit-new-caught{
+    color:black;
+   margin-left:200px;
+    
+}
