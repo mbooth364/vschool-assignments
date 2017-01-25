@@ -20,12 +20,21 @@ body{
     font-weight:800;
     font-family: fantasy;
 }
+
+@keyframes header{40% {font-size:150px; color:red;}
+    
+}
+header{
+    height:220px;
+}
 header h1{
     font-size: 250px;
     text-align: center;
     font-family: fantasy;  
     margin:20px;
     color:yellow;
+    animation: header 5s infinite;
+    
 }
 section img{
     max-height: 200px;
@@ -39,12 +48,14 @@ section ul li{
     display:inline; 
     font-family: 'Cherry Swash', cursive; 
     color:yellow;
+    text-shadow: 2px 2px red;
 }
 article h3{
     margin:50px 0px 0px 0px;
     font-family: 'Cherry Swash', cursive; 
     font-size:30px;
     color:yellow;
+    text-shadow: 2px 2px red;
 }
 
 footer{
@@ -125,6 +136,13 @@ form h4{
 }
 #submit-new-caught{
     color:black;
-   margin-left:200px;
+    margin-left:200px;
+    font-size: 30px;
+    transition: font-size .1s;
+    
     
 }
+#submit-new-caught:active{
+    font-size:25px;
+}
+    

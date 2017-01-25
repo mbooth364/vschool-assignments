@@ -1,7 +1,4 @@
-//input: id="new-goombas-caught
-//submit: id="submit-goombas
-//total: id="total-goombas-caught
-//coins: id="total-coins
+
 
 var newGoombas = document.getElementById("submit-new-caught");
 newGoombas.addEventListener("click", function () {

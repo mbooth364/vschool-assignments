@@ -15,20 +15,20 @@
                     <form>
                         <fieldset>
                             <h3>Name:</h3>
-                                <input type="text" name="name" required><br>
+                                <input id="name" type="text" name="name" required><br>
                             <h3>Game:</h3>
-                                <input type="text" name="game"><br>
+                                <input id="game" type="text" name="game" required><br>
                             <h3>Date:</h3>
-                                <input type="date" name="date"><br>
+                                <input id="date" type="date" name="date" required><br>
                             <h3>Score:</h3>
                                 <input type="number" name="score"><br>   
                             <h3>Best time:</h3>
-                                <input type="number" name="score"><br> 
+                                <input id="time" type="number" name="score"><br> 
                             <h3>You got something to say??</h3>
                             <h4>Yeah I got something to say!</h4>
                                 <input type="checkbox" name="trash talk"><br>
-                                <textarea name="message" rows="10" cols="30"></textarea>
-                            <button type="submit">Submit</button>
+                                <textarea id="message" name="message" rows="10" cols="30"></textarea>
+                            <button id="submit-new-score" type="submit">Submit</button>
                         </fieldset>
                     </form>
                 </article>
@@ -38,16 +38,16 @@
                                 <tr class="table-head">
                                     <td>Name</td>
                                     <td>Game</td>
-                                    <td>date</td>
-                                    <td>score</td>
-                                    <td>empty</td>
+                                    <td>Date</td>
+                                    <td>Score</td>
+                                    <td>Time</td>
                                 </tr>
                                 <tr>
-                                    <td>Mike</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
+                                    <td id="form-name"></td>
+                                    <td id="form-game"></td>
+                                    <td id="form-date"></td>
+                                    <td id="form-score"></td>
+                                    <td id="form-time"></td>
                                 </tr>
                                 <tr>
                                     <td>Sarah</td>
@@ -73,6 +73,6 @@
                         </table>
                     </article2>
         
-    
+    <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
