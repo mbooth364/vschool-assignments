@@ -1,0 +1,77 @@
+{
+    "appetizers": [
+        {
+            "name": "Big Easy Balls",
+            "ingredients": ["Cajun Chicken", "Andouille Sausage", "Garlic Herb Rice", "PepperJack"],
+            "description": "A Cajun style Arancini"
+        },
+        {
+            "name": "Great Balls of Fire",
+            "ingredients": ["Chopped Chicken", "Redhot", "Tempura Batter"],
+            "Description": "Our variation of a boneless buffalo wing"
+        }
+    ],
+    "Cold Sandwiches": [
+        {
+            "name": "The Club",
+            "ingredients": ["turkey", "ham", "swiss", "American", "garlic mayo", "sourdough"],
+            "description": "The classic club piled high with meats and cheeses"
+        },
+        {
+            "name": "Turkey Pesto",
+            "ingredients": ["turkey", "pesto", "swiss", "sourdough"],
+            "description": "The best damn turkey pesto you will ever have!"
+        }
+    ],
+    "Hot Sandwiches": [
+        {
+            "name": "Porkys' Revenge",
+            "ingredients": ["pulled pork", "grilled hot link", "american", "onion rings"],
+            "description": "A massive sandwich piled high with slow smoked pork spicy sausage and homemade onion rings"
+        },
+        {
+            "name": "Fig Bacon Bleu Burger",
+            "ingredients": ["bleu cheese", "bacon fig spread", "lettuce", "1/3# angus beef patty"],
+            "description": "Smokey and sweet burger topped with bleu cheese"
+        },
+        {
+            "name": "hawaiian burger",
+            "ingredients": ["grilled pineapple", "teriyaki", "LT", "1/3# Angus patty"],
+            "description": "Sweet and tangy burger"
+        }
+    ],
+    "Desserts": [
+        {
+            "name": "Fried Ice Cream",
+            "ingredients": ["Vanilla ice cream", "fried cinnamon dusted tortila", "chocolate sauce"],
+            "description": "Amazing dessert, crunchy and sweet"
+        },
+        {
+            "name": "Sopapillas",
+            "ingredients": ["fried dough", "chocolate sauce", "whipped cream"],
+            "description": "warm fried dough, dusted with cinnamon sugar and topped with chocolate sauce and whipped cream"
+        },
+        {
+            "name": "Peanut Butter Chocolate Chip Cookies",
+            "ingredients": ["chocolate chips", "Peanut butter", "cookie dough"],
+            "description": "Homemade cookies fresh from the oven"
+        }
+    ],
+    "Drinks": [
+        {
+            "name": "Strawberry Daquari",
+            "ingredients": ["Strawberries", "Ice", "sugar", "RUM!"],
+            "description": "MMM its a damn good daquari!"
+        },
+        {
+            "name": "Chocolate Milkshake",
+            "ingredients": ["chocolate", "ice cream", "milk"],
+            "description": "cold and refreshing super chocolately"
+        },
+        {
+            "name": "Fruit Punch",
+            "ingredients": ["Strawberries", "raspberries", "Orang juice"],
+            "description": "refreshing fruity drink"
+        }
+    ]
+}

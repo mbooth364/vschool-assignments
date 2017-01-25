@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>travel time</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+   <h1>Booth Travel</h1>
+    <form id="myForm" onsubmit="submit()">
+        <fieldset>
+           <div class="container">
+          
+            <label for="first name">First name:</label>
+            <input type="text" placeholder="mike" name="firstName">
+              
+             
+            <label for="last name">Last name:</label>
+            <input type="text" placeholder="booth" name="lastName">
+          
+            
+            <label for="age">Age:</label>
+            <input type="number" value="age" name="age">
+         
+            <br>
+            <label for="gender" name="gender">Gender</label>
+            <br>
+             Male:<input type="radio" value="male" name="gender">
+             Female:<input type="radio" value="female" name="gender">
+            <br>
+            
+            <h4>
+                Where would you like to fly to?
+            </h4>
+            <select name="location">
+                <option value="Steamboat Springs">Steamboat Springs</option>
+                <option value="Vail">Vail</option>
+                <option value="Breckenridge">Breckenridge</option>
+            </select>
+            <h4>
+                Any dietry restrictions?
+            </h4>
+            <select name="diet">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten free</option>
+            </select><br><br>
+            <button type="button" id="submit">Submit</button>
+               </div>
+            </div>
+        </fieldset>
+
+
+    </form>
+    <script src=app.js></script>
+</body>
+
+</html>
