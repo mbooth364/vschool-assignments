@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="routingApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Angular</title>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="container">
+    <nav>
+        <ul>
+            <a href="#!/home"><li>Home</li></a>
+            <a href="#!/about"><li>About</li></a>
+            <a href="#!/recipes"><li>Recipes</li></a>
+        </ul>
+    </nav>
+    <div ng-view></div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="app.js"></script>
+<!--    controllers-->
+    <script src="home/home.js"></script>
+    <script src="about/about.js"></script>
+    <script src="recipes/recipes.js"></script>
+<!--    service-->
+    <script src="personalService.js"></script>
+</body>
+
+</html>

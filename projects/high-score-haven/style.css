@@ -1,26 +1,93 @@
 body{
-    background-color: ;
+    background-image: url("https://img.clipartfox.com/a1ecf00f7a7513d6907432754ff48914_video-games-video-game-violence-clipart_1600-893.jpeg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size:100%;
 }
+h2{
+    color:white;
+}
+
+form h3{
+    color:white;
+    display:inline-block;
+    
+}
+article{
+    height:380px;
+}
+
+
 table{
     margin:auto;
+    height:100px;
+}
+.table{
+    width:650px;
+   
 }
 th{
-    font-size:60px;
+    font-size:25px;
+    color:white;
+    text-align: center;
+   
 }
 table tr{
     border:2px solid black;
 }
 table tr td{
-   
-    font-size:30px;
-    padding:10px;
+    font-size:25px;
     text-align: center;
-    padding:50px;
+    padding:20px;
+    color:WHITE;
     
 }
 .table-head td{
     text-decoration: underline;
-    font-size: 60px;
-    
+    font-size: 60px;    
+}
+
+h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: serif;
+    color:white;
+}
+
+.background{
+    background-color:rgba(1,1,1,.5);
+    margin-top: -20px;
+    height:1420px;
+}
+
+
+
+#trashTalk{
+    font-size:25px;
+    color:white;
+    margin:30px 0px 0px 0px;
+}
+article2 h2{
+    font-size:100px;
+    font-family: serif;
+    color:white;
+}
+
+form{
+    margin-top:100px;
+        
+}
+
+#checkboxYes{
+   font-size:30px;
+    margin-left:10px;
+    height:px;
+    width:30px
+}
+#submit-new-score{
+    margin:30px 0px 0px 100px;
+    font-size:20px;
     
 }
+
+

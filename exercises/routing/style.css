@@ -1,0 +1,85 @@
+ul li {
+    display: inline;
+    padding: 20px;
+    font-size: 30px;
+    font-family: serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: serif;
+    font-size: 80px;
+}
+
+.state-flag img {
+    height: 500px;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+
+
+.contact img{
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    height:175px;
+    width:225px;
+    padding:5px;
+   
+}
+
+.right-side{
+    border:1px solid black;
+    text-align: center;
+    margin:80px 0px 0px 0px;
+    
+}
+
+#flag {
+    height:100px;
+    width:135px;
+}
+
+#seal{
+    height:100px;
+    width:100px;
+}
+
+#about {
+    margin:-5px 0px 5px 0px;
+    border-bottom:1px solid black;
+
+}
+
+#nickname{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}
+.blue{
+    color:blue
+}
+.map{
+    border-bottom:1px solid black;
+}
+
+#language {
+    text-align: left;
+    font-size:15px;
+    
+}
+.size ul li{
+    float:left;
+    font-size:15px;
+    
+}
+
+.capital{
+    border-top:1px solid black;
+    border-bottom:1px solid black;
+}

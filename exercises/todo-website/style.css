@@ -1,0 +1,38 @@
+body{
+    background-color:rgba(55, 73, 93, .8)
+}
+h1{
+    text-align: center;
+    font-size:50px;
+    font-family:serif;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    font-family:serif;
+}
+form{
+    border:2px solid white;
+    border-radius: 5px;
+    padding:20px;
+    background-color:rgba(225, 133, 118, .4)
+}
+img{
+    height:100px;
+    width:150px;
+}
+
+#completed{
+    
+ 
+}
+
+ul li{
+    list-style-type:none;
+}
+
+.completed-todo{
+    text-decoration: line-through;
+    color:red;
+    font-style: italic;
+}

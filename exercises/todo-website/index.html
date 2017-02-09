@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo Website</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainController">
+    <div class="row container-fluid">
+        <h1>To Do List</h1>
+        <div class="col-sm-6">
+            <form class="form-group">
+                <h2>Add a Task</h2>
+                <br>
+                <input size="50" class="form-control" type="text" placeholder="ToDo" ng-model="newTodo.title">
+                <br>
+                <input size="50" class="form-control" type="text" placeholder="description" ng-model="newTodo.description">
+                <br>
+                <input size="50" class="form-control" type="number" placeholder="price" ng-model="newTodo.price">
+                <br>
+                <input size="50" class="form-control" type="text" placeholder="Image Url" ng-model="newTodo.imgUrl">
+                <br>
+                <button class="btn-primary" ng-click="addTodo(newTodo)">Add Task</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <!--            <form class="form-group">-->
+            <div ng-repeat="x in todoList track by $index">
+                <h2 class="{'completed-todo': x.completed}" ng-hide="editing">{{ x.title }}</h2>
+                <div class="form-group" ng-show="editing">
+                    <input size="40" class="form-control" type="text" placeholder="ToDo" ng-model="x.title">
+                </div>
+                <h2>{{ x.description }}</h2>
+                <h2>{{ x.price }}</h2>
+                <img style="float:right" ng-src="{{ x.imgUrl}}">
+                <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="deleteItem(x._id, $index)"></button>
+                <button ng-hide="editing" class="btn btn-warning glyphicon glyphicon-pencil" ng-click="editing = !editing"></button>
+                <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="editing = !editing; updateList(x, $index)"></button>
+                <input id="completed" type="checkbox" ng-model="x.completed" ng-change="updateList(x)">
+
+            </div>
+            <!--            </form>-->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="todo-services.js"></script>
+</body>
+
+</html>

@@ -1,78 +1,76 @@
 <!DOCTYPE html>
-    <head>
+
+<head>
     <title>High Score Haven</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
 <html>
-    <body>
-        <header>
-            <h1>High Score Haven</h1>
-        </header>
-            <section>
-                <h2>I am a damn good gamer.  Do you think you can beat me?  Lets see what you got!</h2>
-            </section>
-                <article>
-                    <form>
-                        <fieldset>
+
+<body>
+    <div class="background">
+        <h1>High Score Haven</h1>
+        <h2>I am a damn good gamer.  Do you think you can beat me?  Lets see what you got!</h2>
+        <article>
+            <form id="myForm">
+                <fieldset>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                             <h3>Name:</h3>
-                                <input id="name" type="text" name="name" required><br>
+                            <input id="name" type="text" name="name" required>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                             <h3>Game:</h3>
-                                <input id="game" type="text" name="game" required><br>
-                            <h3>Date:</h3>
-                                <input id="date" type="date" name="date" required><br>
+                            <input id="game" type="text" name="game" required>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                             <h3>Score:</h3>
-                                <input type="number" name="score"><br>   
-                            <h3>Best time:</h3>
-                                <input id="time" type="number" name="score"><br> 
-                            <h3>You got something to say??</h3>
-                            <h4>Yeah I got something to say!</h4>
-                                <input type="checkbox" name="trash talk"><br>
-                                <textarea id="message" name="message" rows="10" cols="30"></textarea>
-                            <button id="submit-new-score" type="submit">Submit</button>
-                        </fieldset>
-                    </form>
-                </article>
-                    <article2>
-                        <table>
-                            <th colspan="5">Leader board</th>
-                                <tr class="table-head">
-                                    <td>Name</td>
-                                    <td>Game</td>
-                                    <td>Date</td>
-                                    <td>Score</td>
-                                    <td>Time</td>
-                                </tr>
-                                <tr>
-                                    <td id="form-name"></td>
-                                    <td id="form-game"></td>
-                                    <td id="form-date"></td>
-                                    <td id="form-score"></td>
-                                    <td id="form-time"></td>
-                                </tr>
-                                <tr>
-                                    <td>Sarah</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Caleb</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td>Aubrey</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                        </table>
-                    </article2>
-        
-    <script type="text/javascript" src="app.js"></script>
-    </body>
+                            <input id="score" type="number" name="score" required>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <h3>Time:</h3>
+                            <input id="time" type="number" name="score" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-12">
+                           <h3>Date: </h3>
+                            <input id="date" type="date" name="date" required>
+                        </div>
+                        <div class="col-sm-4 col-xs-12"> 
+                            <h3 id="trashTalk">Yes I need to talk some Trash!!:</h3> 
+                            
+                            <input  id="check" type="checkbox" name="yes">
+                                
+                        </div>
+                        <div class="col-sm-4 col-xs-12">
+                            <button id="submit-new-score" type="button">Submit</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+        <article2>
+            <h2 class="text-center">Leader board</h2>
+            <div class="table-responsive">
+                <table class="table table-condensed" id="high-score-table" class="table table-bordered table-striped">
+                    <tr class="table-head">
+                        <th>Name</th>
+                        <th>Game</th>
+                        <th>Date</th>
+                        <th>Score</th>
+                        <th>Time</th>
+                        <th>Trash Talk</th>
+                    </tr>
+                </table>
+            </div>
+        </article2>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.validation/1.15.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="app2.js"></script>
+
+</body>
+
 </html>

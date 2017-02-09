@@ -1,0 +1,11 @@
+h1{
+    text-align: center;
+    background-color:aquamarine;
+    height:60px;
+    margin-bottom:-1px
+}
+
+.buttons{
+    background-color:lightcyan;
+    padding:20px;
+}

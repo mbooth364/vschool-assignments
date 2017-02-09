@@ -1,0 +1,366 @@
+ @font-face {
+    font-family: 'bebas-bold';
+    src: url("bebas_neue/BebasNeue.otf") format('opentype');
+}
+@font-face {
+    font-family: 'avenir';
+    src: url("avenir/AvenirLTStd-Book.otf") format('opentype');
+}
+footer h2 {
+    text-align: center;
+    font-family: "bebas-bold";
+    font-weight: 100;
+  
+}
+header {
+    height: 80px
+}
+
+.navbar {
+    background-color: white;
+    border: 1px solid white;
+    margin: 20px 0px 0px 0px;
+}
+
+.navbar-form ul {
+    margin: 0px 0px 0px -79px
+}
+
+.navbar-form li {
+    display: inline;
+    padding-right: 0px;
+    margin-left: 60px;
+    font-family: 'avenir', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+}
+
+.section {
+    background-color: rgb(254, 225, 212);
+    height: 60px;
+}
+
+.mySlides {
+    height: 600px;
+    width: 100%;
+}
+
+.email {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    padding-top: 18px;
+}
+h2{
+   font-family: 'avenir', Helvetica Neue, Helvetica, Arial, sans-serif; 
+}
+
+.main-col1 {
+    margin-top: 30px;
+/*    margin-right: 30px;*/
+}
+
+.main-col1 h4 {
+    text-align: center;
+    font-family: 'avenir', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    
+}
+
+h2:hover {
+    color: rgb(254, 225, 212);
+}
+
+.flawless {
+    margin-top: 80px;
+}
+
+.wardrobe {
+    margin-top: 80px;
+}
+
+.wardrobe-img {
+    max-height: 600px;
+}
+
+.foundation-img {
+    max-height: 800px
+}
+
+.main-col1 h2 {
+    text-align: center;
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.main-col1 h5 {
+    text-align: center;
+    font-family: avenir, sans-serif;
+}
+
+#content-img {
+    max-height: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chemical-peel {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+    margin-left: 70px;
+}
+
+.chemical-peel h2 {
+    font-family: avenir, sans-serif;
+}
+
+.chemical-peel img {
+    padding-left: ;
+    margin-left: 20px;
+}
+
+.main-col1 p {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 500px;
+    font-family: Avenir, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+#read-more {
+    background-color: white;
+}
+
+.content-right {
+    margin-top: 80px;
+    height: 200px;
+    float: right;
+    margin-bottom: 1600px;
+}
+
+.content-right h4 {
+    font-size: 18px;
+    font-weight: 100;
+/*    font-family: "Bebas Neue Light";*/
+    margin-top: -10px;
+    font-family: 'bebas-bold';
+}
+
+.content-right ul li {
+    display: inline;
+}
+
+.content-right ul li i {
+    font-size: 12px;
+    padding: 11px;
+}
+
+.content-right ul {
+    text-align: center;
+}
+
+.content-right h5 {
+    text-align: center;
+}
+
+#follow-border {
+    border: 0px;
+    margin: -30px 0px 0px 20px;
+    width: 60px;
+    padding-top: -30px;
+}
+
+#email2 {
+    margin: 0px 0px 20px 0px;
+    border: 0px;
+}
+
+.widgetSlides {
+    margin-left: -30px
+}
+
+#subscribe-input {
+    border: 0px;
+    margin: -30px 0px 0px 0px;
+    width: 80px;
+}
+
+.social {
+    border: 1px solid black;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+#subscribe-email {
+    font-size: 20px;
+    float: right;
+    margin: -10px 0px 0px 0px;
+}
+
+#wishlist-border {
+    border: 0px;
+    margin: -30px 0px 0px 0px;
+    width: 80px;
+}
+
+#wishlist {
+    border: 1px solid black;
+    margin-top: 80px;
+}
+
+#wishlist-image {
+    height: 450px;
+}
+
+.side-pics {
+    border: 1px solid black;
+    margin: 30px 0px 0px 0px;
+}
+
+#favorites-border {
+    border: 0px;
+    margin: -10px 0px 0px 0px;
+    width: 80px;
+}
+
+#gap-pic {
+    height: 250px;
+    width: 275px;
+}
+
+#kate-spade {
+    height: 150px;
+    width: 275px;
+}
+
+#jcrew {
+    height: 150px;
+    width: 275px;
+}
+
+#asos {
+    height: 150px;
+    width: 275px;
+}
+
+#sephora {
+    height: 150px;
+    width: 275px;
+}
+
+.social2 ul li {
+    display: inline;
+    font-size: 30px;
+    color: rgb(254, 225, 212);
+    margin-left: 40px;
+}
+
+footer {
+    margin-top: 50px;
+    margin-left: 0px
+}
+
+    footer img {
+        max-height: 125px;
+        max-width: 115px;
+        min-height: 125px;
+        min-width: 115px;
+/*        border: 2px solid black;*/
+    
+}
+@media only screen and (max-width:500px){
+footer img{
+    max-height: 100%;
+        max-width: 100%;
+        min-height: 100%;
+        min-width: 100%;
+        
+    }
+}
+
+    
+
+
+footer ul li {
+    display: inline;
+    margin-left: -5px;
+}
+
+
+ 
+
+.main3 {
+    margin: 100px 0px 0px 0px;
+}
+
+.main3 img {
+    max-height: 700px;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+.main4 {
+    margin-left: 00px;
+}
+
+.main4 h2 {
+    width: 440px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main5 {
+    margin-top: 80px;
+}
+
+.main5 h2 {
+    text-align: center;
+    width: 300px;
+    margin-left: 60px;
+}
+
+.main5 img {
+    max-height: 500px;
+}
+
+.dropbtn {
+    color: black;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: pink;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer ul li {
+    display: inline;
+}

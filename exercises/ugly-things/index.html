@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ugly Things</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+</head>
+
+<body ng-controller="MainController">
+    <div class="row continer-fluid">
+        <div class="col-md-8 col-md-offset-2">
+            <h1>
+                   Ugly Things
+               </h1>
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-group">
+                    <input  class="form-control form-inline" type="text" placeholder="Image" ng-model="uglyThing.image" ng-minlength="3"><br>
+                    <input  class="form-control form-inline" type="text" placeholder="Title" ng-model="uglyThing.title" ng-minlength="3"><br>
+                    <input  class="form-control form-inline" type="text" placeholder="Description" ng-model="uglyThing.description" ng-minlength="3"><br>
+                    <button ng-click="addNewUgly()" class="btn btn-primary btn-md center-block" type="button">Submit</button>
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+    <br>
+    <div class="row container output">
+        <div class="col-md-4" ng-repeat="x in uglies track by $index">
+            <img ng-src="{{ x.image }}">
+            <h2>
+               {{ x.title }}
+            </h2>
+            <h2>
+               {{ x.description }}
+               <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="delete($index)"></button>
+            </h2>
+            
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

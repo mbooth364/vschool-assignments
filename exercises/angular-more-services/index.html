@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="CartoonApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>More Services</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body ng-controller="CartoonController">
+    <h1>Cartoon List</h1>
+    <div class="row container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+            <form>
+                <input class="form-control" type="text" placeholder="imageUrl" ng-model="newCartoon.image">
+                <br>
+                <input class="form-control" type="text" placeholder="title" ng-model="newCartoon.title">
+                <br>
+                <input class="form-control" type="text" placeholder="description" ng-model="newCartoon.description">
+                <br>
+                <button ng-click="addCartoon(newCartoon)" class="center-block btn  btn-lg" type="button">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div ng-repeat="x in favoriteCartoon track by $index">
+
+                <h3> {{ x.title }}</h3>
+                <h3> {{ x.description }}</h3>
+                <img class="center-block img-responsive" ng-src="{{x.image}}">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="cartoonService.js"></script>
+</body>
+
+</html>

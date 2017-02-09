@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>First Angular</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body ng-controller="MainController">
+
+    <!--    ng-model will change the name value-->
+    <input type="text" placeholder="enter a name" ng-model="name">
+    <br>
+    <input type="text" placeholder="enter a name" ng-model="person.name">
+    <input type="text" placeholder="enter an age" ng-model="person.age">
+
+    <h1>This is my name: {{ name }}</h1>
+    <h1>{{ person.name }} {{ person.age }}</h1>
+    <h1> {{ array[0] }}</h1>
+    <h2 ng-repeat="blah in array">{{ blah }}</h2>
+
+    <div ng-repeat="tx in transactions">
+        <h3>Description: {{ tx.description }}</h3>
+        <h5>Amount: {{ tx.amount }}</h5>
+        <hr>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>amount</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="tx in transactions">
+                    <td>{{ tx.description }}</td>
+                    <td>{{ tx.amount }}</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4" ng-repeat="sand in sandwiches">
+            <h3>{{ sand.name }}</h3>
+            <p> {{ sand.description }}</p>
+            <ul>
+                <li ng-repeat="ingredient in sand.ingredients">
+                    {{ ingredient }}
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="">Name</label>
+                <input class="form-control" type="text" ng-model="newSandwich.name">
+            </div>
+            <div class="form-group">
+                <label for="">Description</label>
+                <input class="form-control" type="text" ng-model="newSandwich.description">
+            </div>
+            <button ng-click="addSandwich()"type="button" class="btn btn-primary btn-md">New Sandwich</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4" ng-repeat="sand in sandwiches">
+            <h3>{{ sand.name }}</h3>
+            <p>{{ sand.description }}</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

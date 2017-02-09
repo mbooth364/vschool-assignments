@@ -1,0 +1,41 @@
+
+.header{
+    background-color:rgb(254, 218, 9); 
+    height:60px;
+}
+.header h1{
+    margin:10px 0px 0px 50px; 
+    font-family: mario;
+}
+.content img{
+    margin-left:45px;
+}
+.content{
+    background-color:rgb(235, 31, 34);
+}
+h2{
+    text-align: center;
+    color:red;
+    font-family: mario;
+    font-size:40px;
+}
+p{
+    text-align: center;
+    color:red;
+    font-family: marioFont;
+    font-size:30px;
+}
+.footer{
+    height:80px;
+    background-color:rgb(254, 218, 9);  
+    margin-top:40px;
+}
+.footer img{
+    height:50px;
+    float:right;
+    margin-top:10px;
+    height:60px
+  
+}
+      
+

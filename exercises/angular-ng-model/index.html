@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>angular ng-model</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body ng-controller="MainController">
+   <div class="row">
+       <div class="col-sm-6 col-sm-offset-3">
+          <h1 style="text-align:center">Family</h1> 
+          <input type="text" placeholder="first name" ng-model="person.firstName">
+          <input type="text" placeholder="last name" ng-model="person.lastName">
+          <input type="text" placeholder="age" ng-model="person.age">
+          <div class="well">
+              <h2>{{ person.firstName }} </h2>
+              <h2> {{ person.lastName }} </h2>
+              <h2> {{ person.age }} </h2>
+          </div>
+          
+       </div>
+   </div>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

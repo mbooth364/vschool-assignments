@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>angular setup ng-repeat</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+</head>
+
+<body ng-controller="MainController">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3" ng-repeat="name in player.kills">
+            <h1> Character: {{ name.handle }}</h1>
+            <h2> Rank: {{ name.rank }}</h2>
+            <h2>Clan:</h2>
+            <h3 style="display:inline" ng-repeat="clan in name.clan">  {{ clan }}</h3><br><br>
+        </div>
+    </div>
+    
+    
+    
+<script src="app.js"></script>
+</body>
+
+</html>

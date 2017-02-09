@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>angular beginnings</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+<body ng-controller="MainController">
+   <input type="text" placeholder="first name" ng-model="newPerson.firstName">
+   <input type="text" placeholder="last name" ng-model="newPerson.lastName">
+   <input type="text" placeholder="age" ng-model="newPerson.age">
+    <h1>This is me: {{ person.firstName }} {{ person.lastName }} {{ person.age }}.</h1>
+    <h1>This is someone else: {{ newPerson.firstName }} {{ newPerson.lastName }} {{ newPerson.age }}</h1>
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,21 +1,4 @@
-//var ask = require('readline-sync');  
-//var input = ask.question('What phrase would you like to encrypt? ').toLowerCase();  
-//var shift = parseInt(ask.question('How many letters would you like to shift? '));  
-//
-//
-//var alphabet = ("abcdefghijklmonpqrstuvwxyz")
-//
-//function caesarCypher(str, num){
-//    var result = " ";
-//    var charCode = 0;
-//    
-//    for(var i = 0; i < str.length; i++){
-//        charCode = (input[i].charCodeAt()) + num;
-//        result += String.fromCharCode(charCode);
-//    }
-//    return result;
-//}
-//var response = ask.question(caesarCypher(input, shift))
+
 
 
 

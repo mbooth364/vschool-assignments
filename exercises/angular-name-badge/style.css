@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+.form1{
+    border:2px solid black;
+    padding:20px;
+    border-radius: 10px;
+   
+}
+textarea{
+    box-sizing: border-box;
+    width:100%
+}
+.badge{
+    display:block;
+    background-color:red;
+    text-align: center;
+    margin-left:0px;
+    margin-right:0px;
+    font-size: 40px;
+    margin-top:-2px;
+}
+.form2{
+    border:2px solid black;
+    border-radius: 10px;
+}
+ul li{
+    display:inline;
+    font-size:20px;
+    text-align: center;
+}
+

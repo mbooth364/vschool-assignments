@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>angular badge</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainController">
+    <div class="row container-fluid">
+        <div class="col-sm-8 col-sm-offset-2">
+            <h1>Form</h1>
+            <form class="form1">
+                <div class="form-group form-inline">
+                    <input size="50" class="form-control" type="text" placeholder="First Name" ng-model="person.firstName" ng-minlength="3">
+                    <input size="50" class="form-control" type="text" placeholder="Last Name" ng-model="person.lastName" ng-minlength="3">
+                </div>
+                <div class="form-group form-inline">
+                    <input size="50" class="form-control" type="text" placeholder="Email" ng-model="person.email" ng-minlength="3">
+                    <input size="50" class="form-control" type="text" placeholder="Place of Birth" ng-model="person.birthPlace" ng-minlength="3">
+                </div>
+                <div class="form-group form-inline">
+                    <input size="50" class="form-control" type="text" placeholder="Phone Number" ng-model="person.phone" ng-minlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <input size="50" class="form-control" type="text" placeholder="Favorite Food" ng-model="person.food" ng-minlength="3">
+                </div>
+                <div>
+                    <textarea placeholder="Tell us about yourself" rows="6" ng-model="person.message" ng-minlength="3"></textarea>
+                </div>
+                <button ng-click="addPerson()" type="button" class="btn btn-primary btn-md center-block" ng-disabled="!person.firstName || !person.lastName || !person.email || !person.birthPlace || !person.phone || !person.food || !person.message">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col-sm-8 col-sm-offset-2">
+            <form class="form2">
+                <div ng-repeat="per in people">
+                    <h2 class="badge">Hello <br> My name is:</h2>
+                    <ul>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <li>Name:</li>
+                                <li>{{ per.firstName }} {{ per.lastName }}</li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>Email:</li>
+                                <li>{{ per.email }}</li>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <li>Place of Birth:</li>
+                                <li>{{ per.birthPlace }}</li>
+                            </div>
+                            <div class="col-md-6">
+                                <li>Phone Number:</li>
+                                <li>{{ per.phone }}</li>
+                            </div>
+                        </div>
+                        <br>
+                        <li>Favorite Food:</li>
+                        <li>{{ per.food }}</li>
+                        <textarea>{{ per.message }}</textarea>
+                    </ul>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
