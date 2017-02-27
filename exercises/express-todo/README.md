@@ -1,0 +1,1 @@
+This is an exercise that helps us practice on connecting to an api.  I built a todo app that allows users to add, edit and delete an item, as well as check it off when it is done.  I also practiced on using express as a router.

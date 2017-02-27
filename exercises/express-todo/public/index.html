@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>To Do List</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="container-fluid" ng-controller="MainController">
+    <div class="row">
+       <div class="col-md-6">
+           <form class="form-group">
+               <h2>Add a Task</h2><br>
+               <input size="50px" class="form-control" type="text" placeholder="Name" ng-model="newTodo.name">
+               <input class="form-control" type="text" placeholder="Description" ng-model="newTodo.description">
+               <input class="form-control" type="text" placeholder="Image" ng-model="newTodo.image">
+               <button class="btn-primary" ng-click="addTodo(newTodo)">Add Task</button>
+           </form>
+       </div>
+       <div class="col-md-6">
+           <div ng-repeat="x in todoList track by $index">
+               <h2 class="{`completed-todo`: x.completed}" ng-hide="editing">{{ x.name }}</h2>
+               <div class="form-group" ng-show="editing">
+                   <input class="form-control" type="text" placeholder="Edit To Do" ng-model="x.title">
+               </div>
+               <h2>{{ x.description }}</h2>
+               <img style="float-right" ng-src="{{ x.imgUrl }}">
+               <button class="btn btn-danger glyphicon glyphicon-trash" ng-click="deleteItem(x.id, $index)"></button>
+               <button ng-hide="editing" class="btn btn-warning glyphicon glyphicon-pencil" ng-click="editing = !editing"></button>
+               <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="editing = !editing; updateList(x, $index)"></button>
+               <input id="completed" type="checkbox" ng-model="x.completed" ng-change="updateList(x)">
+           </div>
+       </div>
+        
+    </div>
+
+
+
+    <script src="app.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>
