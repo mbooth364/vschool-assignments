@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bounty Hunter</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-controller="MainController" class="container">
+    <h1 class="text-center">Bounty Hunters</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <div ng-repeat="x in bountyList track by $index">
+                <h2> First Name: {{ x.firstName }}</h2>
+                <h2>Last Name: {{ x.lastName }}</h2>
+                <h2>Alive?: {{ x.living }}</h2>
+                <h2>Bounty Amount: {{ x.bountyAmount }}</h2>
+                <h2>Jedi or Sith: {{ x.type }}</h2>
+                <img ng-src="{{ x.image }}">
+
+
+
+                <div ng-show="editing">
+                    <input ng-model="x.firstName">
+                    <input ng-model="x.lastName">
+                    <input ng-model="x.living">
+                    <input ng-model="x.bountyAmount">
+                    <input ng-model="x.type">
+                    <input ng-model="x.image">
+                </div>
+
+                <div>
+                    <button ng-hide="editing" class="btn btn-danger glyphicon glyphicon-trash" ng-click="deleteBountyHunter(x._id, $index)"></button>
+
+                    <button ng-hide="editing" class="btn btn-warning glyphicon glyphicon-pencil" ng-click="editing = !editing"></button>
+
+                    <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="editing = !editing; updateBountyHunter(x, $index)"></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+                <h2> Add a Bounty Hunter</h2>
+                <input class="form-control" placeholder="first name" ng-model="newHunter.firstName">
+                <input class="form-control" placeholder="last name" ng-model="newHunter.lastName">
+                <input class="form-control" placeholder="living" ng-model="newHunter.living">
+                <input class="form-control" placeholder="Bounty Amount" ng-model="newHunter.bountyAmount">
+                <input class="form-control" placeholder="Sith or Jedi" ng-model="newHunter.type">
+                <input class="form-control" placeholder="image Url" ng-model="newHunter.image">
+                <button class="btn btn-primary" ng-click="addBountyHunter(newHunter)">Add Hunter</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+    <script src="services.js"></script>
+</body>
+
+</html>
