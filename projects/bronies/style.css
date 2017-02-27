@@ -1,0 +1,122 @@
+body{
+    background-image:url(http://images.r.cruisecritic.com/features/regions/northern-lights-canada.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+
+}
+
+.navbar{
+    background-color:rgba(1,1,1,0);
+    border:0;
+  
+}
+
+.navbar li{
+    font-family:serif;
+    font-size:30px;
+    margin-top:10px;  
+}
+.carousel-inner{
+    height:300px;
+}
+.item{
+    height:50%;
+}
+
+h1{
+    text-align: center;
+    color:white;
+    font-family: serif;
+    font-size:80px;
+}
+
+.logo{
+    height:60px;
+    width:80px;
+    margin-top:-10px;
+}
+
+
+#myNavbar ul li{
+     padding-left: 80px;
+}
+
+h2{
+    color:white;
+    text-align: center;
+}
+h3{
+    color:paleturquoise;
+    font-family:serif
+}
+img{
+    height:100px;
+}
+
+ul li{
+    list-style-type:none;  
+}
+
+.pony-list{
+    margin-top:100px;
+}
+
+.thumbnail{
+    width:350px;
+    background-color:black;
+    border:1px solid green;
+}
+.thumbnail-text{
+    color:white;
+    font-size:30px;
+}
+#efnw{
+    color:lawngreen;  
+}
+
+.guest-name{
+    text-align: center;
+    color:white;
+}
+
+#name{
+    font-family:serif;
+    font-size:30px;
+    color:white;
+}
+#rollover-img{
+    height:125px;
+    border-radius: 25px;
+    
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding:20px;
+}
+
+.form-group{
+    width:500px;
+    padding:10px 30px 30px 30px;
+    margin-bottom:20px;
+/*    background-color:rgba(1,1,1,0.3)*/
+    
+}
+
+.form-control{
+    margin-bottom:10px;
+}
+
+.ng-invalid.ng-touched {
+    border-color:red;
+}
+.ponyName-block{
+    color:red;
+}
+
+
+

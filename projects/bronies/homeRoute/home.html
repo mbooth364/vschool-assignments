@@ -1,0 +1,26 @@
+<div class="container" ng-controller="homeController">
+   
+ 
+  
+  
+
+    <div class="row">
+       <h1>My Little Pony</h1>
+        <div class="col-sm-6 col-md-3 text-center" ng-repeat="pony in ponyList">
+            <ul>
+                
+                <li><img ng-src="{{pony.imgUrl}}"></li>
+                <div ng-show="editing">
+                    <input type="text" placeholder="new Image" ng-model="pony.imgUrl">
+                </div>
+                <li id="name">{{ pony.name }}</li>
+                <div ng-show="editing">
+                    <input type="text" placeholder="new pony name" ng-model="pony.name">
+                </div>
+                <button ng-hide="editing" type="submit" ng-click="deletePonyButton(pony._id, $index)">delete pony</button>
+                <button ng-hide="editing" class="btn btn-sm btn-warning glyphicon glyphicon-pencil" ng-click="editing = !editing"></button>
+                <button ng-show="editing" class="btn btn-success glyphicon glyphicon-floppy-disk" ng-click="editing = !editing; updatePony(pony, $index)"></button>
+
+            </ul>
+        </div>
+    </div>

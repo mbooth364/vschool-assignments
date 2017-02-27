@@ -1,0 +1,48 @@
+<div class="container" ng-controller="submitController">
+    <div class="row">
+        <div class="col-md-6">
+            <form class="form-group" name="ponyForm">
+                <h3>Would you like to add a new Pony</h3>
+                <br>
+                <input class="form-control" name="ponyName" type="text" placeholder="pony name" ng-model="newPony.name" pattern="[a-zA-Z]+" ng-pattern-restrict ng-minlength="3" required>
+                <p ng-show="ponyForm.ponyName.$invalid && ponyForm.ponyName.$touched" class="ponyName-block">Pony name must be at least 3 characters long, and can not contain numbers</p>
+                
+                <input class="form-control" name="ponyImage" type="text" placeholder="pony image" ng-model="newPony.imgUrl">
+                
+                <input class="form-control" name="userName" type="text" placeholder="username" ng-model="newPony.username" ng-minlength="3" required>
+                <p ng-show="ponyForm.userName.$invalid && ponyForm.userName.$touched" class="ponyName-block">User name must have at least 3 characters</p>
+                
+                <button type="submit" ng-click="addPony(newPony)" ng-disabled="ponyForm.$invalid">add pony</button>
+            </form>
+            
+        </div>
+        <div class="col-md-6">
+            <div class="thumbnail center-block">
+                <a href="https://everfreenw.com/#-" target="_blank"><img style="height:200px;" src="https://everfreenw.com/wp-content/uploads/Tim-Stuby-Denny-Lu-Full-web.jpg"></a>
+                <h3 class="text-center thumbnail-text">Join us at <br><a id="efnw" href="https://everfreenw.com/">EverFree Northwest</a><br> the coolest My Little <br>Pony convention<br>May 12th-14th 2017<br><br>Special guests include:</h3><br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="http://mlp.wikia.com/wiki/Rebecca_Shoichet" target="_blank">
+                            <img id="rollover-img" src="https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/rebecca_shoichet.jpg" onmouseover="this.src='https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/rebecca_shoichet-rollover.jpg'" onmouseout="this.src='https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/rebecca_shoichet.jpg'" />
+                        </a>
+                        <h4 class="guest-name">Rebecca Shoichet</h4>
+                    </div>
+                    <div class="col-md-6">
+                        <a href="http://mlp.wikia.com/wiki/Britt_McKillip" target="_blank">
+                            <img id="rollover-img" src="https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/britt_mckillip.jpg" onmouseover="this.src='https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/britt_mckillip-rollover.jpg'" onmouseout="this.src='https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/britt_mckillip.jpg'" />
+                        </a>
+                        <h4 class="guest-name">Britt McKillip</h4>
+                    </div>
+                </div>
+                <!--
+                <div class="guest-btn">
+                    <img src="https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/rebecca_shoichet.jpg">
+                    <img src="https://everfreenw.com/wp-content/themes/efnw2017/dist/images/guests/rebecca_shoichet-rollover.jpg">
+                </div>
+-->
+            </div>
+        </div>
+    </div>
+
+
+</div>
